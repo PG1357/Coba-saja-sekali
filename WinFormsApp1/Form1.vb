@@ -8,15 +8,12 @@
         MSComm1.Open()
         Timer1.Enabled = True
     End Sub
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As
-System.EventArgs) Handles Button2.Click
-MSComm1.Close()
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        MSComm1.Close()
         Timer1.Enabled = False
         End
     End Sub
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As
-System.EventArgs) Handles Button1.Click
-MSComm1.WriteLine(Trim(TextBox1.Text))
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click MSComm1.WriteLine(Trim(TextBox1.Text))
     End Sub
     Private Sub TextBox1_KeyPress(ByVal sender As System.Object, ByVal e As
 System.Windows.Forms.KeyPressEventArgs) Handles TextBox1.KeyPress
